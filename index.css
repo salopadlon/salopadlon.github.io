@@ -1,12 +1,18 @@
-nav .navbar-nav a {
-	color: #EC1A27 !important;
-  	margin-left: 10px;
-  	margin-right: 10px;
+body {
+	background-image: url("img/people.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 img {
 	width: 100px;
 	height: 50px;
+}
+
+nav .navbar-nav a {
+	color: #EC1A27 !important;
+  	margin-left: 10px;
+  	margin-right: 10px;
 }
 
 th {
