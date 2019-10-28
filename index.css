@@ -2,6 +2,7 @@ body {
 	background-image: url("img/people.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	font-family: 'Roboto', "Open Sans", sans-serif;
 }
 
 img {
@@ -13,6 +14,7 @@ nav .navbar-nav a {
 	color: #EC1A27 !important;
   	margin-left: 10px;
   	margin-right: 10px;
+  	font-weight: bold;
 }
 
 th {
