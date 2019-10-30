@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style type="text/css">
+
+        img {
+            width: 120px;
+            height: 60px;
+        }
+
+        nav .navbar-nav a {
+            color: #EC1A27 !important;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        th {
+            color: #EC1A27;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            height: 100vh;
+            background-image: url("../static/img/people.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*font-family: 'Roboto', "Open Sans", sans-serif;*/
+        }
+
+        .navlink {
+            color: #EC1A27;
+            display:inline-block;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        a {
+            color: black;
+            display:inline-block;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            display:inline-block;
+            margin: 40px 8px 10px 8px;
+            color: #cccccc;
+        }
+
+
+
+
+
+        input[type=button], input[type=submit], input[type=reset]  {
+            background-color: #EC1A27;
+            border: none;
+            color: white;
+            padding: 15px 80px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 13px;
+            -webkit-box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2);
+            -webkit-border-radius: 5px 5px 5px 5px;
+            border-radius: 5px 5px 5px 5px;
+            margin: 5px 20px 40px 20px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+            background-color: #C41A27;
+        }
+
+        input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+            -moz-transform: scale(0.95);
+            -webkit-transform: scale(0.95);
+            -o-transform: scale(0.95);
+            -ms-transform: scale(0.95);
+            transform: scale(0.95);
+        }
+
+        input[type=text] {
+            background-color: #f6f6f6;
+            border: none;
+            color: #0d0d0d;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px;
+            width: 85%;
+            border: 2px solid #f6f6f6;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            -webkit-border-radius: 5px 5px 5px 5px;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        input[type=text]:focus {
+            background-color: #fff;
+            border-bottom: 2px solid #EC1A27;
+        }
+
+        input[type=text]::placeholder {
+            color: #cccccc;
+        }
+
+
+        @-webkit-keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+        }
+
+        /* Simple CSS3 Fade-in Animation */
+        @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+        @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+        @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+        /* Simple CSS3 Fade-in Animation */
+        .underlineHover:after {
+            display: block;
+            left: 0;
+            bottom: -10px;
+            width: 0;
+            height: 2px;
+            background-color: #C41A27;
+            content: "";
+            transition: width 0.2s;
+        }
+
+        .underlineHover:hover {
+            color: #C41A27;
+            text-decoration: none;
+        }
+
+        .underlineHover:hover:after{
+            width: 100%;
+        }
+
+
+        /* OTHERS */
+
+        *:focus {
+            outline: none;
+        }
+
+
+        .gdpr {
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-top: 50px;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .gdprnadpis {
+            text-align: center;
+            color: #EC1A27;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+        }
+
+    </style>
+
+    <title>Henkel</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-white rounded">
+    <a class="navbar-brand" href="/">
+        <img src="img/henkel.png" class="d-inline-block align-top" alt="">
+    </a>
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active underlineHover navlink" href="/pozicie">Zoznam pozícií <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active underlineHover navlink" href="/ludia">Zoznam ľudí <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active underlineHover navlink" href="/gdpr">GDPR<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active underlineHover navlink" href="/uchadzac" id="uchadzac">Uchádzať sa o pozíciu<span class="sr-only">(current)</span></a>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid gdprnadpis">
+    <h1>GDPR</h1>
+</div>
+
+<div class="container-fluid gdpr">
+    <p>"Na základe všeobecného nariadenia o ochrane údajov 2016/679 (ďalej len „GDPR“) vyhlasujem, že som si prečítal(a) a porozumel(a) obsah dokumentu Oznámenie o ochrane osobných údajov, a týmto výslovne beriem na vedomie, že:
+
+        (i) moje osobné údaje budú spracúvané spoločnosťou Henkel s.r.o., so sídlom Záhradnícka 263/91, 821 08 Bratislava, Slovenská republika, IČO: 17324246, zapísaná v Obchodnom registri Okresného súdu Bratislava I, oddiel: Sro, vložka číslo: 37879/B (ďalej len „Prevádzkovateľ“) v plnom súlade s nariadením GDPR a ostatnými platnými právnymi predpismi, a to spôsobom a v rozsahu uvedenom v dokumente Oznámenie o ochrane osobných údajov.
+
+        (ii) ak si ako vlastník údajov budem žiadať získať viac informácií o spracovaní svojich osobných údajov alebo budem si chcieť uplatniť svoje individuálne práva, môžem kontaktovať Prevádzkovateľa údajov buď prostredníctvom kontaktných údajov uvedených v Oznámenie o ochrane osobných údajov, alebo na henkel@henkel.sk."</p>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
